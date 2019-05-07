@@ -361,15 +361,6 @@ main .section-pricing .pricing:not(:first-of-type):hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
-main .section-pricing .pricing:nth-child(1) {
-  grid-area: pricing;
-}
-main .section-pricing .pricing:nth-child(2) {
-  grid-area: free;
-}
-main .section-pricing .pricing:nth-child(3) {
-  grid-area: vip;
-}
 main .section-closedbeta {
   background: var(--colorBackgroundDark);
   border-radius: 4px;
@@ -452,8 +443,7 @@ footer .items a:hover {
   grid-gap: 25px;
 }
 .grid-wrapper.grid-pricing {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "pricing free vip";
+  grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
 }
 .grid-wrapper.grid-closedbeta {
@@ -463,11 +453,6 @@ footer .items a:hover {
 @media screen and (max-width: 1200px) {
   header .section-jumbotron {
     padding-top: 100px;
-  }
-  .grid-wrapper.grid-pricing {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "pricing pricing" "free vip";
-    grid-gap: 25px;
   }
   .grid-wrapper.grid-closedbeta {
     grid-template-columns: 1fr 1fr;
@@ -504,7 +489,6 @@ footer .items a:hover {
   }
   .grid-wrapper.grid-pricing {
     grid-template-columns: 1fr;
-    grid-template-areas: "pricing" "free" "vip";
     grid-gap: 25px;
   }
   .grid-wrapper.grid-closedbeta {
